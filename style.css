@@ -130,18 +130,21 @@ lable:hover {
     opacity: 0;
     transform: scale(0);
     position: relative;
-    display: none;
+    display: none; 
 }
+
 
 .container .section-2 .exceptional {
     opacity: 0;
     transform: scale(0);
     position: relative;
-    display: none; 
+    display: none;
 }
 
-
-#category1:checked ~ .container .section-2 .photo {
+#category1:checked ~ .container .section-2 .photo,
+#category1:checked ~ .container .section-2 .babyT,
+#category1:checked ~ .container .section-2 .family,
+#category1:checked ~ .container .section-2 .exceptional {
     opacity: 1;
     transform: scale(1);
     position: relative;
@@ -152,19 +155,19 @@ lable:hover {
     opacity: 1;
     transform: scale(1);
     position: relative;
-    display: block;
-
+    display: block; 
 }
+
 #category3:checked ~ .container .section-2 .family {
     opacity: 1;
     transform: scale(1);
     position: relative;
-    display: block;
+    display: block; 
 }
 
 #category4:checked ~ .container .section-2 .exceptional {
     opacity: 1;
     transform: scale(1);
     position: relative;
-    display: block;
+    display: block; 
 }
