@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+input {
+    display: none;
+}
 .container {
     width: 100%;
     text-align: center ;
@@ -13,6 +16,28 @@ h1 {
     font-weight: normal;
     position: relative;
     margin: 40px 0; 
+}
+h1::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 400px;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: brown;
+    animation: animate 4s linear infinite;
+}
+@keyframes animate {
+    0%{
+        width: 100px
+    }
+    50%{
+        width: 200px
+    }
+    100%{
+        width: 100px
+    }
 }
 .section-1 {
     background-color: rgb(243, 243, 243);
@@ -42,7 +67,7 @@ label {
     transition: color .5s;
 }
 lable:hover {
-    color: red;
+    color: rgb(2, 1, 1);
 }
 .section-2 {
     width: 90%;
@@ -99,21 +124,27 @@ lable:hover {
 .photo:hover::after{
     height: 100%;
 }
-#category1:category ~ .container .section-2 .photo{
+
+.container .section-2 .babyT,
+.container .section-2 .family {
+    opacity: 0;
+    transform: scale(0);
+    position: relative;
+    display: none;
+}
+
+.container .section-2 .exceptional {
+    opacity: 0;
+    transform: scale(0);
+    position: relative;
+    display: none; 
+}
+
+
+#category1:checked ~ .container .section-2 .photo {
     opacity: 1;
     transform: scale(1);
     position: relative;
-    transition: 0s;
+    display: block; 
 }
-#category2:category ~ .container .section-2 .babyT{
-    opacity: 1;
-    transform: scale(1);
-    position: relative;
-}
-#category2:category ~ .container .section2 .exceptional,
-#category2:category ~ .container .section2 .babyT {
-    opacity: 1;
-    transform: scale(1);
-    position: relative;
-    transition: 0;
-}
+
