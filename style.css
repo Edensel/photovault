@@ -8,3 +8,9 @@
     width: 100%;
     text-align: center ;
 }
+h1 {
+    font-size: 40px;
+    font-weight: normal;
+    position: relative;
+    margin: 40px 0;
+}
