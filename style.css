@@ -57,6 +57,7 @@ lable:hover {
     box-shadow: 3px 3px 5px lightgray;
     height: 230px;
     cursor: pointer;
+    transition: .5s;
 }
 .photo  img {
     height: 100%;
@@ -97,4 +98,22 @@ lable:hover {
 }
 .photo:hover::after{
     height: 100%;
+}
+#category1:category ~ .container .section-2 .photo{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: 0s;
+}
+#category2:category ~ .container .section-2 .babyT{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+#category2:category ~ .container .section2 .exceptional,
+#category2:category ~ .container .section2 .babyT {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: 0;
 }
