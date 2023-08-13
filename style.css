@@ -12,5 +12,15 @@ h1 {
     font-size: 40px;
     font-weight: normal;
     position: relative;
-    margin: 40px 0;
+    margin: 40px 0; 
+}
+.section-1 {
+    background-color: rgb(243, 243, 243);
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px lightgrey;
 }
