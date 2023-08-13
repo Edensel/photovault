@@ -148,3 +148,23 @@ lable:hover {
     display: block; 
 }
 
+#category2:checked ~ .container .section-2 .babyT {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    display: block;
+
+}
+#category3:checked ~ .container .section-2 .family {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    display: block;
+}
+
+#category4:checked ~ .container .section-2 .exceptional {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    display: block;
+}
