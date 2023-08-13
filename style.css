@@ -52,5 +52,14 @@ lable:hover {
     grid-template-columns: repeat(4, 1fr);
 }
 .photo {
-    position
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px lightgray;
+    height: 230px;
+    cursor: pointer;
+}
+.photo img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
 }
